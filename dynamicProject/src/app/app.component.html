@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="input-group flex justify-content-between mt-5">
+        <div class="custom-file ">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+        <div class="input-group mb-3">
+          <input type="input" class="form-control rounded-0" placeholder="please enter component name" [(ngModel)]="cname" value="">
+          <div class="input-group-append">
+            <button (click)="compname(cname)" class="form-control btn btn-outline-primary rounded-0" type="submit">Submit</button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+ <div class="container">
+  <h1>
+<ng-container *ngComponentOutlet="load"></ng-container>
+  </h1>
+</div>
