@@ -9,6 +9,7 @@
           <div class="input-group-append">
             <button (click)="compname(cname)" class="form-control btn btn-outline-primary rounded-0" type="submit">Submit</button>
           </div>
+
         </div>
     </div>
   </div>
@@ -21,6 +22,13 @@
 
 
  <div class="container">
+  <strong>please enter name of component to load...</strong>
+  <p>component names - 
+     | <code>comp1</code> |
+     | <code>comp2</code> |
+     | <code>comp3</code> |
+     | <code>comp4</code> |
+  </p>
   <h1>
 <ng-container *ngComponentOutlet="load"></ng-container>
   </h1>
